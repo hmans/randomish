@@ -1,6 +1,14 @@
-export const { random, sin, cos, acos, sqrt, cbrt, PI } = Math
+const { random, sin, cos, acos, sqrt, cbrt, PI } = Math
 
-export const number = (max: number) => random() * max
+/* Export good old Math.random */
+export { random }
+
+/**
+ * Returns a random number between 0 and the specified maximum (exclusive.)
+ *
+ * @param max Maximum value (exclusive) of the generated number.
+ */
+export const number = (max: number = 1) => random() * max
 
 export const between = (min: number, max: number) => min + number(max)
 
