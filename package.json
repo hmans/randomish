@@ -1,5 +1,5 @@
 {
-  "name": "randomly",
+  "name": "randomish",
   "author": {
     "name": "Hendrik Mans",
     "email": "hendrik@mans.de",
@@ -15,7 +15,7 @@
     "vectors"
   ],
   "sideEffects": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
