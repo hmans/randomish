@@ -10,7 +10,7 @@ export { random }
  */
 export const number = (max: number = 1) => random() * max
 
-export const between = (min: number, max: number) => min + number(max)
+export const between = (min: number, max: number) => min + number(max - min)
 
 export const plusMinus = (a: number) => between(-a, +a)
 
