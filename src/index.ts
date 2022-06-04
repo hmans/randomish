@@ -14,6 +14,8 @@ export const between = (min: number, max: number) => min + number(max - min)
 
 export const plusMinus = (a: number) => between(-a, +a)
 
+export const power = (exponent = 2) => Math.pow(number(), exponent)
+
 export const insideCircle = (radius = 1) => {
   const angle = number(2 * PI)
   const r2 = sqrt(number(radius))
