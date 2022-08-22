@@ -18,12 +18,22 @@ export const plusMinus = (a: number) => between(-a, +a)
 
 export const power = (exponent = 2) => Math.pow(number(), exponent)
 
+export const angle = () => number(2 * PI)
+
+const onCircle = (radius = 1) => {
+  const theta = angle()
+  const x = radius * Math.cos(theta)
+  const y = radius * Math.sin(theta)
+
+  return { x, y }
+}
+
 export const insideCircle = (radius = 1) => {
-  const angle = number(2 * PI)
+  const theta = angle()
   const r2 = sqrt(number(radius))
 
-  const x = r2 * cos(angle)
-  const y = r2 * sin(angle)
+  const x = r2 * cos(theta)
+  const y = r2 * sin(theta)
 
   return { x, y }
 }
