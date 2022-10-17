@@ -30,7 +30,7 @@ export const onCircle = (radius = 1) => {
 
 export const insideCircle = (radius = 1) => {
   const theta = angle()
-  const r2 = sqrt(number(radius))
+  const r2 = sqrt(number()) * radius
 
   const x = r2 * cos(theta)
   const y = r2 * sin(theta)
