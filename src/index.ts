@@ -20,7 +20,7 @@ export const power = (exponent = 2) => Math.pow(number(), exponent)
 
 export const angle = () => number(2 * PI)
 
-const onCircle = (radius = 1) => {
+export const onCircle = (radius = 1) => {
   const theta = angle()
   const x = radius * Math.cos(theta)
   const y = radius * Math.sin(theta)
